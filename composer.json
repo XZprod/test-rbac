@@ -1,0 +1,19 @@
+{
+  "name": "xzprod/rbac-test",
+  "type": "project",
+  "authors": [
+    {
+      "name": "XZprod",
+      "email": "r.o.profile@gmail.com"
+    }
+  ],
+  "require": {},
+
+
+  "autoload": {
+    "psr-4": {
+      "App\\": "app"
+    }
+  }
+
+}
