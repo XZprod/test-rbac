@@ -79,6 +79,7 @@ class User
 
     public static function can($user, $item)
     {
+        if(!$user) return false;
         $sql = 'select group_id from users_groups where user_id = ' . $user['id'];
         $groupid = App::app()->db->query($sql)->fetchColumn();
         $sql = 'select name from items_groups join auth_items on auth_items.id = items_groups.item_id WHERE group_id=' . $groupid . ';';
